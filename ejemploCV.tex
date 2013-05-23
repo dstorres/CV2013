@@ -1,0 +1,94 @@
+% Curriculum de Ejemplo
+
+\documentclass[11pt, a4paper]{moderncv}
+
+%Estilo del paquete moderncv, otra opcion es classic
+\moderncvstyle{casual}
+
+%Codificacion
+\usepackage[utf8]{inputenc}
+
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}} Solo para el tema clasico
+
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Nombre}
+\familyname{Apellido1 apellido2}
+\title{Currículum Vit\ae}
+%\datebirth
+\address{Calle Numero, Código Postal Ciudad}
+\phone{666123456}
+\email{contacto@ejemplo.net}
+\extrainfo{www.ejemplo.net}
+%\photo[64pt]{picture_file}
+
+
+
+%---------------------
+% Contenido
+%---------------------
+
+\begin{document}
+\maketitle
+
+\section{Datos Personales}
+
+\cvlistitem{\textbf{Nombre:} Nombre}
+\cvlistitem{\textbf{Apellidos:} apellido1 apellido2}
+\cvlistitem{\textbf{Fecha de Nacimiento:} 25 diciembre 1983}
+\cvlistitem{\textbf{Dirección:} calle numero, cod. postal, ciudad}
+\cvlistitem{\textbf{Teléfono:} 666123456}
+\cvlistitem{\textbf{Correo:} contacto@ejemplo.net}
+\cvlistitem{\textbf{Web:} \weblink{www.ejemplo.net}}
+
+
+\section{Formación académica}
+%En los cventry debe haber 6 llaves, aunque no tengamos mas que introducir
+%y esten vacias
+\cventry{2001--2003}{Bachillerato tecnológico} {Colegio Perri}{Zaragoza}{}{}
+\cventry{2004--2009}{Ingeniero técnico en Informática de Sistemas}{Universidad de Estocolmo}{Estocolmo}{}{}
+\cventry{2009--actualidad}{Cursando Segundo Ciclo de Ingeniero Informático}{Universidad de Estambul}{}{}{}
+
+\section{Otros títulos y seminarios}
+
+\cventry{Agosto 2007}{Curso de Introducción a Servidores }{Universidad de Sevilla}{Sevilla}{}{}
+
+\section{Experiencia Profesional}
+%\section{Experiencia becada}
+%\section{Experiencia Freelance}
+%\section{Docencia}
+
+%para ver el funcionamiento de subsecciones
+\subsection{Vocacional}
+
+\cventry{Abril 2008 - Junio 2008}{Becario}{Empresa X}{Desarrollo en la plataforma Eclipse}{Sevilla}{}
+\cventry{Junio 2008 - Junio 2009}{Analista}{Empresa Y}{Sevilla}{}{}
+
+\section{Idiomas}
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Castellano}{Nativo}{}
+\cvlanguage{Inglés}{Nivel medio}{Graduado I en inglés del instituto de idiomas}
+\closesection{}
+%Salto de pagina
+\pagebreak{}
+
+\section{Conocimientos técnicos}
+
+%Los comandos cvcomputer necesitan 4 llaves
+\cvcomputer{SSOO}{GNU/Linux, Windows}
+{administración}{Apache, Mailman, Drupal}
+\cvcomputer{programación}{\textsc{Python},\textsc{Java} , C, C++ básico, PHP básico, Javascript básico (jQuery)}{}{}
+\cvcomputer{Científico}{LaTex, Matlab, Maple}{}{}
+\cvcomputer{Bases de Datos}{MySQL, ORACLE}{}{}
+
+\section{Otros datos de interés}
+%Los cvitem necesitan dos llaves
+\cvitem{Software Libre}{Asociación Sugus GNU/Linux Software Libre, Universidad de Sevilla}
+
+%\section{Intereses}
+\section{Más información}
+\end{document}
